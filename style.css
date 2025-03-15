@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color:rgb(125, 190, 51);
+}
+
+body {
+    display: grid;
+    background-image: linear-gradient(to bottom right, rgb(125, 190, 51), rgb(65, 204, 181));
+    grid-template-rows: 1fr 6fr;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    grid-row: 1/2;
+}
+
+.board-container {
+    grid-row: 2/3;
+    border: 2px solid blue;
+}
